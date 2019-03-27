@@ -4,8 +4,8 @@ var syllables = require('./syllables');
 // set method on 'Term', then reference that on Sentence & Text
 var nlpSyllables = {
   Term: {
-    syllables : function() {
-      return syllables(this.normal);
+    syllables : function(str) {
+      return syllables(str);
     }
   },
   Sentence: {
